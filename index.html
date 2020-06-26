@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Apple.js"></script>
+    <script src="Human.js"></script>
+</head>
+<body>
+<script>
+    let apple = new Apple()
+    apple.weight = 10;
+    let adam = new Human();
+    let eva = new Human;
+    adam.setName('Adam');
+    adam.setGender('man');
+    adam.setWeight(50);
+
+    eva.setName('Eva');
+    eva.setGender('wowan');
+    eva.setWeight(50);
+
+    adam.say('hello');
+    eva.say('hi');
+    adam.say(' what is your name ? ');
+    eva.say(' i am ' + eva.getName() + ' and you ? ');
+    adam.say(adam.getName());
+
+    adam.eat(apple);
+    document.write(apple.getWeight() + "<br>");
+    document.write(adam.getWeight() + "<br>");
+    eva.eat(apple);
+    document.write (apple.getWeight()+ "<br>");
+    document.write (eva.getWeight()+ "<br>");
+</script>
+</body>
+</html>
